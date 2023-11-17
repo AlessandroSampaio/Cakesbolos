@@ -6,3 +6,6 @@ package-lock.json
 
 #firebase configuration
 src/firebase/config.js
+
+#Expo files
+.expo
