@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Alert, Button } from "react-native";
-import RegistraUsuario from "../../firebase/auth";
+import { RegistraUsuario } from "../../firebase/auth";
 import AuthForm from "../../components/AuthForm";
 
 export default function SignUpScreen({ navigation }) {
   function handleRegistrar() {
-    console.debug(`Registrando o email ${user?.email} com senha ${user?.senha}`);
+    console.debug(
+      `Registrando o email ${user?.email} com senha ${user?.senha}`
+    );
     RegistraUsuario(user)
       .then((userCredential) => {
         // Signed in
