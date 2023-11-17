@@ -3,3 +3,6 @@ node_modules
 
 #Lock
 package-lock.json
+
+#firebase configuration
+src/firebase/config.js
